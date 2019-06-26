@@ -1,2 +1,2 @@
 # Incentivise-Volunteering-Website
-We don't know what we're doing yet
+A website that lets users create and join volunteer activities and earn volunteer points for doing so.
