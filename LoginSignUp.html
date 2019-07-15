@@ -1,0 +1,79 @@
+<!--
+    Jeffrey Zhang
+    7/14/19
+    Incentivized Volunteering - Login/Signup page
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(139, 238, 161)
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#Home">Home</a>
+  <a href="#About">About</a>
+  <a href="#Contact">Contact</a>
+  <div class="topnav-right">
+    <a href="#JoinVolunteerActivities">Join Volunteer Activities</a>
+    <a href="#CreateVolunteerActivities">Create Volunteer Activities</a>
+    <a class="active" href="#LoginSignUp">Login/Signup</a>
+  </div>
+</div>
+
+<div style="padding-left:10px">
+    <h2>Login</h2>
+    Username:<input type="text" name="FirstName" placeholder = "Enter your username" value=""><br>
+    Password: <input type="text" name="LastName" placeholder = "Enter your password" value=""><br>
+    <input type="submit">
+</div>
+
+<div style="padding-left:10px">
+    <h2>Sign Up</h2>
+    First name:<input type="text" name="FirstName" placeholder = "Enter your first name" value=""><br>
+    Last name: <input type="text" name="LastName" placeholder = "Enter your last name" value=""><br>
+    Email:     <input type="text" name="LastName" placeholder = "Enter your email address" value=""><br>
+    Username:<input type="text" name="FirstName" placeholder = "Enter a username" value=""><br>
+    Password: <input type="text" name="LastName" placeholder = "Enter a password" value=""><br>
+    Re-enter Password:<input type="text" name="LastName" placeholder = "Re-enter your password" value=""><br>
+    <input type="submit">
+</div>
+
+
+</body>
+</html>
