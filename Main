@@ -1,17 +1,36 @@
-Eileen Liu 
-7/3/19
-Incentivized Volunteering- Main Page
+<!––
+Eileen Liu
+7/3/19 
+Incentivized Volunteering-Main Page
+-->
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/* Heading, captain, and body */
+h1 {
+  text-align: center;
+  color: #7ad9f5;
+}
+
+p {
+	text-align: left;
+}
+
+.logo-img {
+    position:absolute;
+	left:0;
+	top:0;
+}
+
 body {
   margin: 0;
   font-family: Garamond, Helvetica, sans-serif;
 }
 
+/* Menu Hover Coloration */
 .topnav {
   overflow: hidden;
   background-color: #fff;
@@ -32,17 +51,33 @@ body {
 }
 
 .topnav a.active {
-  background-color: #FFD667;
+  background-color: #bdf2d5;
   color: white;
 }
 
-h1 {
-  text-align: center;
-  color: #DCBFC7;
+/* Navigation */
+nav{
+    margin: 0;
+    overflow:hidden;
+    text-align: right;
 }
 
-p {
-	text-align: left;
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
+    text-decoration: none;
 }
 
  /* Set the size of the div element that contains the map */
@@ -56,20 +91,28 @@ p {
 <body>
 
 <div class="topnav">
-  <a class="active" href="#home">Log in</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+    <nav>
+        <ul>
+            <li><a href="#active">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#home">Log in</a></li>
+        </ul>
+    </nav>
+	
+<div class="logo-img">
+    <img src="IV_pug_logo_green.png"  
+     height = 50 width = 50/>
 </div>
 
 <div style="float:left; margin-left:100px">
   <h1><font size="30">Incentivized<br>Volunteering</font></h1>
   <p><b> <pre>  Note this website is a test site</b><br>A way to make volunteering fun and<br>     interesting for everyone</p>
 
-<input type="button" style="background-color: #FFD667;color:black;width:235px;
+<input type="button" style="background-color: #bdf2d5;color:black;width:235px;
 height:40px; font-family: Garamond, Helvetica, sans-serif; font-size: 17px;" value="Get Started >">
 </div>
 
-<img src="volunteer.png" alt="Volunteer Photo" style="float:right; width:350px;height:230px;">
+<img src="IV_banner.png" alt="Volunteer Photo" style="float:right; width:1100px;height:280px;">
 
     <!--The div element for the map -->
     <div id="map"></div>
